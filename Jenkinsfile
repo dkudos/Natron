@@ -1,5 +1,10 @@
 pipeline {
-  agent none
+  agent {
+    docker {
+      image 'natrongithub/natron-sdk:latest'
+    }
+
+  }
   stages {
     stage('Make Build Dir') {
       steps {
