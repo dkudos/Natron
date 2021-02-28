@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'natrongithub/natron-sdk:latest'
+      image 'natrongithub/natron-sdk'
     }
 
   }
